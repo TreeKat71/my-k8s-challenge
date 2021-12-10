@@ -10,9 +10,7 @@
 
 
 ## Install containerd
-```bash
-# Excute on all nodes
-```
+Please refer to https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd
 
 
 
