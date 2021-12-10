@@ -11,7 +11,7 @@ apt-get update
 apt-get install -y kubeadm=$VERSION kubelet=$VERSION
 apt-mark hold kubelet kubeadm
 
-if  [[ $2 = "--client" ]]; then
+if  [ "$2" = "--client" ]; then
     apt-get install -y kubectl=$VERSION
     apt-mark hold kubectl
 fi
