@@ -72,14 +72,3 @@ $ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl vers
 --token <token> \
 --discovery-token-ca-cert-hash sha256:<hash>
 ```
-
-
----
-
-Found mistakes?
-------------
-
-
-Feel free to contact me through
-[email](mailto:muller79924@gmail.com)
-in english or chinese.
