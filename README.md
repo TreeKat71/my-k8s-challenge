@@ -1,11 +1,11 @@
 # DigitalOcean Kubernetes Challenge - CICD pipeline with GitOps
 
-1. Setup k8s manually with `kudeadm`
-2. Setup `Harbor`
-3. Setup CI pipeline with `Github Actions`
-4. Setup CD pipeline with `ArgoCD`
-5. Commit sample `fastapi` code
-6. Upgrade k8s version
+- [x] Setup k8s manually with `kudeadm`
+- [ ] Setup `Harbor`
+- [x] Setup CI pipeline with `Github Actions`
+- [ ] Setup CD pipeline with `ArgoCD`
+- [x] Commit sample `fastapi` code
+- [ ] Upgrade k8s version
 
 Would like to try `fluentd` and `kube-monkey` if I have time. 
 
