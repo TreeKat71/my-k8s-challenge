@@ -8,6 +8,7 @@ on:
 
 defaults:
   run:
+  # defaults.run only applies to jobs.<job_id>.steps[*].run
     working-directory: fastapi
 
 jobs:
@@ -67,5 +68,6 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
+          context: fastapi
           push: true
           tags: treekat71/k8s-challenge:0.1
