@@ -1,4 +1,4 @@
-# Steps
+# Steps to setup a k8s cluster
 
 1. Install container runtime
     - docker (dockershim will be deprecated soon)
