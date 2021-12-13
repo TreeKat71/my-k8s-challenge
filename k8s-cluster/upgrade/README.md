@@ -46,7 +46,7 @@ $ sudo kubeadm upgrade node
 ```bash
 $ kubectl drain <node-to-drain> --ignore-daemonsets
 
-$ sudo sh kubelet.sh
+$ sudo sh kubelet.sh <kubelet_version>
 
 $ kubectl uncordon <node-to-drain>
 ```
