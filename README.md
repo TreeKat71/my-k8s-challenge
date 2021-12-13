@@ -1,13 +1,18 @@
 # DigitalOcean Kubernetes Challenge - CICD pipeline with GitOps
 
-- [x] Setup k8s manually with `kudeadm`
 - [ ] Setup `Harbor`
 - [x] Setup CI pipeline with `Github Actions`
 - [ ] Setup CD pipeline with `ArgoCD`
 - [x] Commit sample `fastapi` code
-- [ ] Upgrade k8s version
+- [ ] Add `fluentd` as a sidecar container, shipping log to S3-like storage.
+- [ ] Setup Minio cluster or use [Minio playground](https://play.minio.io:9443/)
+- [x] Setup kubernetes manually with `kudeadm`
+- [x] Upgrade Kubernetes cluster
 
-Would like to try `fluentd` and `kube-monkey` if I have time. 
+
+Special thanks to
+------------
+I appericate digitalocean offer this [challenge](https://www.digitalocean.com/community/pages/kubernetes-challenge#anchor--success-criteria) and resources.
 
 
 Found mistakes?
