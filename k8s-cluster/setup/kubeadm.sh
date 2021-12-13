@@ -7,11 +7,11 @@ curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.
 # Add the Kubernetes apt repository
 echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | tee /etc/apt/sources.list.d/kubernetes.list
 # Install kubelet, kubeadm and kubectl
-apt-get update
-apt-get install -y kubeadm=$VERSION kubelet=$VERSION
+apt-get update && \
+apt-get install -y kubeadm=$VERSION kubelet=$VERSION && \
 apt-mark hold kubelet kubeadm
 
 if  [ "$2" = "--client" ]; then
-    apt-get install -y kubectl=$VERSION
+    apt-get install -y kubectl=$VERSION && \
     apt-mark hold kubectl
 fi

@@ -5,7 +5,7 @@ apt-get update && \
 apt-get install -y kubeadm=$VERSION && \
 apt-mark hold kubeadm
 
-if  [ $2 = "--client" ]; then
+if  [ "$2" = "--client" ]; then
     apt-mark unhold kubectl && \
     apt-get install -y kubectl=$VERSION && \
     apt-mark hold kubectl
