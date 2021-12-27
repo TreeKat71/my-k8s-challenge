@@ -12,7 +12,7 @@ defaults:
     working-directory: fastapi
 
 jobs:
-  ci:
+  fastapi:
     runs-on: ubuntu-latest
     steps:
       # Get Codebase
@@ -65,15 +65,27 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       # Build and push docker image
       - name: Build and push fastapi
-        id: fastapi
+        id: docker_build
         uses: docker/build-push-action@v2
         with:
           context: fastapi
           push: true
           tags: treekat71/k8s-challenge:0.1
+
+  fluentd:
+    runs-on: ubuntu-latest
+    steps:
+      # Get Codebase
+      - uses: actions/checkout@v2
+      # Dockerhub auth
+      - name: Login to DockerHub
+        uses: docker/login-action@v1 
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       # Build and push docker image
       - name: Build and push fluentd-s3
-        id: fluentd-s3
+        id: docker_build
         uses: docker/build-push-action@v2
         with:
           context: fluentd
