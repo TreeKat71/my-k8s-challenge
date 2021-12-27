@@ -65,7 +65,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       # Build and push docker image
       - name: Build and push fastapi
-        id: docker_build
+        id: fastapi
         uses: docker/build-push-action@v2
         with:
           context: fastapi
@@ -73,7 +73,7 @@ jobs:
           tags: treekat71/k8s-challenge:0.1
       # Build and push docker image
       - name: Build and push fluentd-s3
-        id: docker_build
+        id: fluentd-s3
         uses: docker/build-push-action@v2
         with:
           context: fluentd
