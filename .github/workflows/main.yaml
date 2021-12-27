@@ -70,7 +70,7 @@ jobs:
         with:
           context: fastapi
           push: true
-          tags: treekat71/k8s-challenge:0.1
+          tags: treekat71/k8s-challenge:0.2
 
   fluentd:
     runs-on: ubuntu-latest
@@ -90,4 +90,4 @@ jobs:
         with:
           context: fluentd
           push: true
-          tags: treekat71/fluentd-s3:0.1
+          tags: treekat71/fluentd-s3:0.3
