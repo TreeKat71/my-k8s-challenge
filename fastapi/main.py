@@ -10,7 +10,7 @@ ERROR_DICT = {0: ImportError, 1: SyntaxError, 2: TypeError}
 
 app = FastAPI()
 fmt = '{time:YYYY-MM-DD HH:mm:ss.SSS}|{level}|{name}:{function}:{line}-{message}'
-# logger.add("/log/spam.log", level="DEBUG", format=fmt)
+logger.add("app.log", level="DEBUG", format=fmt)
 logger.add(sys.stderr, level="ERROR", format=fmt)
 
 
