@@ -68,9 +68,10 @@ jobs:
       - name: Set artifact tag
         id: artifact
         run: |
-          tag=${{ github.ref_name }}
-          if "${{ github.ref_name }}" == "main"; then
-              tag=latest
+          tag="${{ github.ref_name }}"
+          if [ "${{ github.ref_name }}" = "main" ]
+          then
+              tag="latest"
           fi
           echo "::set-output name=TAG::${tag}"
       # Build and push docker image
