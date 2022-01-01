@@ -14,4 +14,4 @@ FROM gcr.io/distroless/python3-debian11
 COPY --from=build-venv /venv /venv
 COPY . /app
 WORKDIR /app
-ENTRYPOINT ["/venv/bin/uvicorn", "main:app", "--host", "0.0.0.0"]
+ENTRYPOINT ["/venv/bin/uvicorn", "main:app", "--host", "0.0.0.0", "--root-path", "/fastapi"]
