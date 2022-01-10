@@ -13,6 +13,7 @@ spec:
         - --root-path    <--- add this
         - /fastapi       <--- add this
 
+# https://fastapi.tiangolo.com/advanced/behind-a-proxy/#proxy-with-a-stripped-path-prefix
 ```
 
 
