@@ -1,6 +1,6 @@
 # DigitalOcean Kubernetes Challenge - CICD pipeline with GitOps
 
-- [ ] Setup `Harbor`
+- [x] Setup `Harbor`
 - [x] Setup CI pipeline with `Github Actions`
 - [x] Setup CD pipeline with `ArgoCD`
 - [x] Commit sample `Fastapi` code
